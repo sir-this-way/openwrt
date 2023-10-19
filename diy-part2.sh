@@ -12,5 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.7.1/192.168.7.101/g' package/base-files/files/bin/config_generate
-# sed -i 's/$(TARGET_DIR)) install/$(TARGET_DIR)) install --force-overwrite --force-depends/' package/Makefile
 git clone https://github.com/haiibo/openwrt-packages package/openwrt-packages
+sed -i 's/$(TARGET_DIR)) install/$(TARGET_DIR)) install --force-overwrite --force-depends/' package/Makefile
