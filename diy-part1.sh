@@ -16,6 +16,3 @@
 # Add a feed source
 #echo 'src-git small https://github.com/kenzok8/small-package.git' >>feeds.conf.default
 sed -i '1i src-git haibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
-./scripts/feeds update -a
-./scripts/feeds install -a
-make menuconfig
